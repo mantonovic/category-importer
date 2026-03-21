@@ -1,6 +1,6 @@
 # Open Food Facts - Food Category importer
 
-This project is a tool to import food categories from Open Food Facts into a local PostgreSQL database. ~~It is designed to be run manually or as a scheduled task to keep the local database up-to-date with the latest food categories from Open Food Facts.~~
+This project is a tool to import food categories from Open Food Facts into a local PostgreSQL database with an `ltree` column. ~~It is designed to be run manually or as a scheduled task to keep the local database up-to-date with the latest food categories from Open Food Facts.~~
 
 ## Features
 
