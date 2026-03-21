@@ -28,7 +28,7 @@ Build the Docker image:
 ```bash
 DOCKER_BUILDKIT=1 \
 docker build \
-    -t taxonomy-importer:latest \
+    -t category-importer:latest \
     -f Dockerfile .
 ```
 
@@ -36,8 +36,8 @@ Tag the Docker image:
 
 ```bash
 docker tag \
-    taxonomy-importer:latest \
-    https://github.com/mantonovic/taxonomy-importer:latest
+    category-importer:latest \
+    https://github.com/mantonovic/category-importer:latest
 ```
 
 ## Using venv
@@ -75,7 +75,7 @@ python src/category.py run-all
 docker run --rm -it  \
     --network=host \
     --env-file .env \
-    taxonomy-importer:latest
+    category-importer:latest
         python src/category.py run-all
 ```
 
@@ -95,7 +95,7 @@ Using Docker:
 docker run --rm -it  \
     --network=host \
     --env-file .env \
-    taxonomy-importer:latest
+    category-importer:latest
         python src/category.py fetch
 ```
 
@@ -111,7 +111,7 @@ Using Docker:
 docker run --rm -it  \
     --network=host \
     --env-file .env \
-    taxonomy-importer:latest
+    category-importer:latest
         python src/category.py init-db
 ```
 
@@ -128,7 +128,7 @@ Using Docker:
 docker run --rm -it  \
     --network=host \
     --env-file .env \
-    taxonomy-importer:latest
+    category-importer:latest
         python src/category.py import
 ```
 
