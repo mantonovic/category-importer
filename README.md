@@ -6,7 +6,7 @@ This project is a tool to import food categories from Open Food Facts into a loc
 
 1. Fetches food categories from Open Food Facts API.
 2. Check if the food category tables exist in the local PostgreSQL database, and creates them if they do not, uses the [schema.sql](./db/1-DB-SCHEMA.sql) file for the database schema.
-3. If the tables already exist, it checks for new food categories and updates the database accordingly.
+~~3. If the tables already exist, it checks for new food categories and updates the database accordingly.~~
 4. Logs the import process for monitoring and debugging purposes.
 
 ## Prerequisites
